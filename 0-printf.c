@@ -4,6 +4,11 @@
 #include <string.h>
 #include "main.h"
 
+/**
+* _printf - a function that output formatted output
+* @format: char input
+* Return: formatted output
+*/
 int _printf(char * format, ...)
 {
 
@@ -27,15 +32,15 @@ int _printf(char * format, ...)
 				case 'd':
 				{
 					itoa(va_arg( vl, int ), tmp, 10);
-					strcpy(&buff[j], tmp);
-					j += strlen(tmp);
+					_strcpy(&buff[j], tmp);
+					j += _strlen(tmp);
 					break;
 				}
 				case 'x':
 				{
 					itoa(va_arg( vl, int ), tmp, 16);
-					strcpy(&buff[j], tmp);
-					j += strlen(tmp);
+					_strcpy(&buff[j], tmp);
+					j += _strlen(tmp);
 					break;
 				}
 			}
