@@ -1,6 +1,5 @@
-#ifndef HOLBERTON_H
-
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdarg.h>
 
@@ -54,7 +53,7 @@ char *_strdup(char *str);
 
 char *convert_base_pointer(unsigned long p);
 
-
+int (*get_op(const char c))(va_list);
 
 /**
 
@@ -78,4 +77,4 @@ char *convert_base_pointer(unsigned long p);
 
 		} flags_p;
 
-		#endif
+#endif

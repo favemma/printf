@@ -78,9 +78,8 @@ char *convert_base_pointer(unsigned long p)
 
 char *convert_rot13(char *str)
 {
-	
 	int i = 0;
-	char = *s;
+	char *s;
 	int size = _strlen_recursion(str);
 	
 	s = malloc(sizeof(char) * size + 1);

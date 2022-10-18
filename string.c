@@ -33,9 +33,9 @@ int _puts(char *str, int ascii)
 			sum += write(1, "\\x", 2);
 			if (str[i] >= 0 && str[i] < 16)
 				sum += _putchar('0');
-				sum += _puts(s, 0);
-				free(s);
-				i++;
+			sum += _puts(s, 0);
+			free(s);
+			i++;
 		}
 		else
 		{
@@ -94,4 +94,4 @@ char *_strdup(char *str)
 		s[cLoop] = str[cLoop];
 	}
 	return (s);
-
+}
